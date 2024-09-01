@@ -1,3 +1,70 @@
+## Array  
+### Problem: [Next Permutation](https://leetcode.com/problems/next-permutation/description/)
+A permutation of an array of integers is an arrangement of its members into a sequence or linear order.
+
+For example, for arr = [1,2,3], the following are all the permutations of arr: [1,2,3], [1,3,2], [2, 1, 3], [2, 3, 1], [3,1,2], [3,2,1].
+The next permutation of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the next permutation of that array is the permutation that follows it in the sorted container. If such arrangement is not possible, the array must be rearranged as the lowest possible order (i.e., sorted in ascending order).
+
+For example, the next permutation of arr = [1,2,3] is [1,3,2].
+Similarly, the next permutation of arr = [2,3,1] is [3,1,2].
+While the next permutation of arr = [3,2,1] is [1,2,3] because [3,2,1] does not have a lexicographical larger rearrangement.
+
+Solution : 
+1. STL library function can be used : 
+A= vector<int>
+next_permutation(A.begin(),A.end())
+
+2. algo :
+       [video](https://www.youtube.com/watch?v=JDOXKqF60RQ)
+
+   example :
+    [2,1,5,4,3,0,0]
+
+    1. check the trend change in lexicographic order
+    2. the trend change point is the breakpoint
+    3. The left part or break point will be unaltered
+    4. the breakpoint index should be replaced by a value that will be just greater than it which should be available right to it.
+    5. after swapping the right part trend will be the same as the previous which is an increasing order from right to left.
+    6. the right section should be replaced by the minimum possible value which can be possible by placing the number in increasing order from left to right.
+    7. So reverse the right section.
+
+function :
+    void nextPermutation(vector<int>& nums) {
+        
+        int break_index=-1;
+        int n=nums.size();
+        
+        //find break point
+        for(int i=n-2;i>=0;i--)
+        {
+            if(nums[i]<nums[i+1])
+            {
+                break_index=i;
+                break;
+            }
+        }
+
+        //swap the break index to next possible larger value in right of break index
+
+        if(break_index!=-1)
+        {
+            for(int i=n-1;i>break_index;i--)
+            {
+                if(nums[i]>nums[break_index])
+                {
+                    int temp=nums[break_index];
+                    nums[break_index]=nums[i];
+                    nums[i]=temp;
+                    break;
+                }
+            }
+        }
+
+        //reverse the section right of break index
+        reverse(nums.begin()+break_index+1,nums.end());
+
+    }        
+
 ## Dynamic programming 
 ### Optimal Strategy For A Game ( recursion + memorisation ) 
 
