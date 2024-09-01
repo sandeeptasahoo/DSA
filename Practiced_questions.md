@@ -1,6 +1,7 @@
-## Optimal Strategy For A Game ( recursion + memorisation ) 
+## Dynamic programming 
+### Optimal Strategy For A Game ( recursion + memorisation ) 
 
-### problem : 
+#### problem : 
 You are given an array A of size N. The array contains integers and is of even length. The elements of the array represent N coin of values V1, V2, ....Vn. You play against an opponent in an alternating way.
 
 In each turn, a player selects either the first or last coin from the row, removes it from the row permanently, and receives the value of the coin.
