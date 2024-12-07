@@ -123,6 +123,20 @@ basically logic says leave one of the value using sum.
                 dp[start][end]=sum-min(option1,option2);
             }
         }
+
+
+## Good questions from codechef : 
+1. https://www.codechef.com/problems/SORT_THEM
+   Use dp focus and on each additional letter how the previous letter can affect
+
+
+## some important point 
+1. instead of using INT_MAX try to see what will be the max value and use that
+   example : 1e9 = 10^9
+   
+
+
+        
         
         return dp[start][end];
     }
