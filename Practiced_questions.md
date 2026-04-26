@@ -129,6 +129,9 @@ basically logic says leave one of the value using sum.
 1. https://www.codechef.com/problems/SORT_THEM
    Use dp focus and on each additional letter how the previous letter can affect
 
+## good question from leetcode : 
+1. https://leetcode.com/problems/maximum-alternating-subsequence-sum/
+
 
 ## some important point 
 1. instead of using INT_MAX try to see what will be the max value and use that
