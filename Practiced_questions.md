@@ -132,6 +132,7 @@ basically logic says leave one of the value using sum.
 ## good question from leetcode : 
 1. https://leetcode.com/problems/maximum-alternating-subsequence-sum/
 2. https://leetcode.com/problems/maximum-balanced-subsequence-sum/description/
+3. https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/
 
 
 ## some important point 
