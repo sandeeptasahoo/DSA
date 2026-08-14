@@ -135,6 +135,10 @@ basically logic says leave one of the value using sum.
 3. https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/
 4. https://leetcode.com/problems/word-break/description/
 
+## Good concept from TUF 
+1. https://takeuforward.org/plus/dsa/problems/morris-inorder-traversal-?source=strivers-sde-sheet
+https://www.youtube.com/watch?v=80Zug6D1_r4
+
 
 ## some important point 
 1. instead of using INT_MAX try to see what will be the max value and use that
